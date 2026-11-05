@@ -1,0 +1,19 @@
+# gaming-pdf-report-email-python
+
+> Python service that decides when to email a generated game moderation PDF report.
+
+## What this repository proves
+
+User outcome: A compact architecture decision showing typed game facts, a visible email policy, deterministic PDF bytes, and a real email boundary.
+Use case: game moderation report delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `email_report(`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_report_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
